@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* General Header Styling */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  /* Container */
+  .header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 150px; 
+    width: auto;
+    padding-top: 10px;
+    margin-top: 40px; /* adjust the value as needed */
+    align-items: flex-start;
+    
+}
+
+  
+  /* Navigation */
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .main-nav a {
+    color: rgba(0, 0, 0, 0.9);
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    color: #110e0e; /* Yellow hover */
+  }
+  
+  /* Right Menu */
+  .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.975rem;
+  }
+  
+  .account-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .account-link:hover {
+    color: #0a0a0a;
+  }
+  
+ a .book-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a .book-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+  
+  /* Mobile Button */
+  .mobile-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 1.5rem;
+  }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .mobile-nav a {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .mobile-nav a:hover {
+    color: #19c3e0;
+  }
