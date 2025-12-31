@@ -1,0 +1,120 @@
+@charset "UTF-8";
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .offer-container {
+            padding: 30px;
+            margin: 50px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        .offer-title {
+            font-size: 28px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .offer-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #738ee5;
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3656f4;
+        }
+
+        .offer-image {
+            width: calc(100% - 20px);
+            height: 600px;
+            object-fit: cover;
+            margin: 20px auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .offer-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .offer-left-section, .offer-right-section {
+            width: 48%;
+        }
+
+        .offer-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .offer-items {
+            padding: 0;
+            font-size: 16px;
+            color: #666;
+            
+        }
+
+        .offer-items li {
+            margin-bottom: 8px;
+        }
+
+        .room-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .booking-button {
+            display: block;
+            background-color: #7391e5;
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .booking-button:hover {
+            background-color: #369ef4;
+        }
+        .he{
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 15px; 
+            font-style: italic;
+        }

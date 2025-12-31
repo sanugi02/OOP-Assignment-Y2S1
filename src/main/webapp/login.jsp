@@ -1,51 +1,75 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <!-- De Silva H.S.S IT23562042  -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Login</title>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/login.css">
+   <link rel="icon" type="image/jpeg" href="images/favicon.png" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<%@ include file="header.jsp" %>
 
-<title>Login</title>
+<div class="login-wrapper">
+  <div class="container">
+    <div class="form-section">
+      <h2>The Crown Crest</h2>
+      <p>Explore More. Experience Luxury.</p>
 
-<link rel="stylesheet" href="styles/login.css">
-<link rel="stylesheet" href="styles/header.css" />
+      <div class="buttons">
+        <button class="btn-outline" onclick="window.location.href='signup.jsp'">Sign up</button>
+        <button class="btn-filled">Log in</button>
+      </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <h3>Journey Begins</h3> 
 
-<main>
-    <%@ include file="header.jsp" %>
-    <section class="login-section">
-        <div class="login-box">
-            <h1>Login to Your Account</h1>
-           
-                <div class="input-group">
-                    <label for="email">Email <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password <span class="required">*</span></label>
-                    <div class="password-container"> 
-                        <input type="password" id="password" name="password" placeholder="Password" required>
-                        <span class="toggle-password" id="togglePassword">
-                        <i class="fa fa-eye"></i> 
-                        </span>
-                    </div>
-                </div>
-                <div class="options">
-                    <label><input type="checkbox"> Remember Me</label>
-                    <a href="#" class="forgot-password">Forgot my password</a>
-                </div>
-                <button type="submit" class="btn login-btn">Login</button>
-                <div class="or">OR</div>
-                <button type="button" class="btn google-btn" onclick="window.location.href='https://localhost/IWT-Assignment-Y1S2/configurations/google-login.php'">
-                     <i class="fab fa-google"></i> Sign in with Google
-                </button>                 
-         </div>
-          
-            
+      <div class="social-login">
+        <i class="fab fa-apple"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
 
-        <div class="signup-box">
-            <h2>New Here?</h2>
-            <p>Sign up and lock in comfort for your big day!</p>
-            <a href="#" class="btn signup-btn">Sign Up</a>
+      <form action=${pageContext.request.contextPath}/userlogin method="POST" class="space-y=4">
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+         
+       <c:if test="${not empty error}">
+            <div class="bg-red-500/20 text-red-400 border border-red-500 rounded-lg p-4 mb-6">
+                <p>${error}</p>
+            </div>
+        </c:if>
+        
+        <div class="options">
+          <label class="remember-me">
+            <input type="checkbox" class="check" />
+            <span>Remember Me</span>
+          </label>
+          <a href="#" class="forgot-password">Forgot Password?</a>
         </div>
-    </section>
-</main>
 
+        <button type="submit" class="btn-filled full" onclick="window.location.href='myAcc.jsp'">Log in</button>
+      </form>
+
+      <!-- NEW: Employee login redirect button -->
+      <div class="employee-link">
+        <button class="btn-employee" onclick="window.location.href='employeeLogin.jsp'">
+          If you're an employee
+        </button>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <div class="overlay">
+        <h3>Wander. Explore. Experience.</h3>
+        <p>Escape the Ordinary,<br>Embrace the Journey!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

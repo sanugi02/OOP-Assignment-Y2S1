@@ -1,0 +1,276 @@
+@charset "UTF-8";
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #fff, #f8f8f8);
+  margin: 0;
+  padding: 0;
+}
+
+.booking-container {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.booking-title {
+  font-size: 32px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #999;
+  max-width: 100px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: -70px;
+  gap: 40px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-size: 18px;
+}
+
+.step .circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step.active .circle {
+  background-color: #b88a44;
+  color: white;
+  border: none;
+}
+
+.step.active .label {
+  font-weight: bold;
+  color: #222;
+}
+
+.booking-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.guest-form {
+  border: 1px solid #ddd;
+  padding: 2rem;
+  width: 600px;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.guest-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.name-row,
+.contact-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.select-input,
+.name-row input,
+.contact-row input,
+.guest-form input,
+textarea {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-bottom: 1px solid #888;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.select-input:focus,
+input:focus,
+textarea:focus {
+  border-color: #b88a44;
+  outline: none;
+}
+
+.booking-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input[type="date"],
+.input-group select {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  color: #444;
+}
+
+.select-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.phone-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phone-group .flag {
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  margin-top: 0.5rem;
+  font-family: inherit;
+}
+
+.char-count {
+  text-align: right;
+  font-size: 0.9rem;
+  color: navy;
+  margin-top: 0.25rem;
+}
+
+.checkbox {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.checkbox input {
+  transform: scale(1.2);
+}
+
+.checkbox a {
+  color: #b89d4f;
+  text-decoration: none;
+}
+
+.submit {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #b89d4f;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #a0762b;
+}
+
+.booking-summary {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.summary-card {
+  border: 1px solid #d4a949;
+  padding: 1rem;
+  background-color: #fffefb;
+}
+
+.summary-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.room-details {
+  margin: 1rem 0;
+}
+
+.room-details p,
+.pricing p {
+  margin: 0.5rem 0;
+}
+
+.pricing {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.pricing span {
+  float: right;
+}
+
+.total {
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.cancellation-policy {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
+
+.pay-at-hotel {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fdf6e3;
+  font-size: 0.95rem;
+  margin-bottom:100px;
+}

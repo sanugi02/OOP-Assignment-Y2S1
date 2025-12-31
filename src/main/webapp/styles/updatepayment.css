@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #fff, #f8f8f8);
+  margin: 0;
+  padding: 0;
+}
+
+.booking-container {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.booking-title {
+  font-size: 32px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.line {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #999;
+  max-width: 100px;
+}
+.payment-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 90%;
+  margin-left:300px;
+}
+
+.image-section {
+  background-color: #F9F9F9;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.form-section h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group.small input {
+  padding: 10px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button.confirm {
+  flex: 1;
+  background-color: #b89d4f;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.confirm:hover {
+  background-color: #0056b3;
+}
+
